@@ -1,3 +1,6 @@
+-- Contrary to the book, Vect is not included in the Prelude
+-- http://www.idris-lang.org/docs/current/prelude_doc/
+-- http://docs.idris-lang.org/en/latest/tutorial/interp.html?highlight=prelude
 data Vect : Nat -> Type -> Type where
     Nil : Vect Z a
     (::) : a -> Vect k a -> Vect (S k) a
